@@ -1,0 +1,42 @@
+video {
+	
+}
+
+.countdown {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	
+	transform: translate(-50%, -50%);
+	
+	color: #C00;
+	font-size: 30em;
+	
+	font-family: 'Staatliches', cursive;
+}
+
+button.camera {
+	
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	
+	font-size: 10em;
+	background: transparent;
+	
+	cursor: pointer;
+	
+	z-index: 10;
+}
+
+img.snapshot {
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	
+	width: 25%;
+	height: auto;
+	
+	border: 5px solid white;
+}
