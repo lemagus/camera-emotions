@@ -41,10 +41,16 @@
 		$green = count($green) > 0 ? round(array_sum($green) / count($green)) : 0;		
 		$blue = count($blue) > 0 ? round(array_sum($blue) / count($blue)) : 0;
 		
-		$red = $red > 0 ?  round(($red/100) * 255) : 0;
+		return [
+			'red'	=> $red,
+			'green'	=> $green,
+			'blue'	=> $blue
+		];
+		
+		/* $red = $red > 0 ?  round(($red/100) * 255) : 0;
 		$green = $green > 0 ?round(($green/100) * 255) : 0;
 		$blue = $blue > 0 ? round(($blue/100) * 255) : 0;
 		
-		return 'rgb('.$red.','.$green.','.$blue.')';
+		return 'rgb('.$red.','.$green.','.$blue.')'; */
 				
 	}

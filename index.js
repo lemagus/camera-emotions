@@ -72,10 +72,13 @@ button.addEventListener('click', function(MouseEvent) {
 			})
 			.then(function(datas){
 				
-				var mask = document.querySelector('.mask')
-				mask.style.backgroundColor = datas.color
-				mask.classList.remove('hide')
+				//var mask = document.querySelector('.mask')
+				//mask.style.backgroundColor = datas.color
+				//mask.classList.remove('hide')
 				
+				image.classList.add('active');
+				image.src = datas.filename;
+
 			})
 			
 		} else {

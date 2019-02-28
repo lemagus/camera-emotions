@@ -18,6 +18,8 @@ video {
 button.camera {
 	
 	position: fixed;
+	z-index: 5;
+	
 	bottom: 20px;
 	left: 50%;
 	transform: translateX(-50%);
@@ -28,15 +30,27 @@ button.camera {
 	cursor: pointer;
 	
 	z-index: 10;
+	opacity: 0.5;
+	
 }
 
 img.snapshot {
 	position: fixed;
+	z-index: 10;
+	
 	top: 50px;
 	right: 50px;
 	
 	width: 25%;
 	height: auto;
 	
+	transition: 0.4s;
 	border: 5px solid white;
+	
+	&.active {
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -50%);
+	}
 }
